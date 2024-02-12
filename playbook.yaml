@@ -1,0 +1,6 @@
+- name: run test
+  hosts: '{{ ansible_limit | default(omit) }}'
+  gather_facts: no
+  roles:
+    - hello-world
+
